@@ -38,6 +38,100 @@
 					"enableStaging": false,
 					"translator": {
 						"type": "TabularTranslator",
+						"mappings": [
+							{
+								"source": {
+									"name": "Year",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Year",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "Jurisdiction",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Jurisdiction",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "Sector",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Sector",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "Area of expenditure",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Area_of_expenditure",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "Broad source of funds",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Broad source of funds",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "Source of funds",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Source_of_funds",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "Current amount ($)",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Current_amount",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "Constant amount ($)",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Constant_amount",
+									"physicalType": "UTF8"
+								}
+							}
+						],
 						"typeConversion": true,
 						"typeConversionSettings": {
 							"allowDataTruncation": true,
