@@ -1,0 +1,56 @@
+{
+	"name": "rawfile",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataLakeStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "australian_health_expenditure.csv",
+				"fileSystem": "raw"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "Year",
+				"type": "String"
+			},
+			{
+				"name": "Jurisdiction",
+				"type": "String"
+			},
+			{
+				"name": "Sector",
+				"type": "String"
+			},
+			{
+				"name": "Area of expenditure",
+				"type": "String"
+			},
+			{
+				"name": "Broad source of funds",
+				"type": "String"
+			},
+			{
+				"name": "Source of funds",
+				"type": "String"
+			},
+			{
+				"name": "Current amount ($)",
+				"type": "String"
+			},
+			{
+				"name": "Constant amount ($)",
+				"type": "String"
+			}
+		]
+	}
+}
